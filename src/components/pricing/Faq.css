@@ -1,0 +1,80 @@
+/* Faq.css */
+.faq-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.faq-container-inner {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.faq-box {
+  background-color: #f5f5f5;
+  border: 1px solid #cecdcd;
+  margin: 20px 0;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.faq-box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+.faq-accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.faq-accordion:hover {
+  background-color: #f0f0f0;
+}
+
+.faq-accordion.active {
+  background-color: #e0e0e0;
+}
+
+.faq-text {
+  padding: 10px;
+  display: none;
+  transition: opacity 0.3s, max-height 0.3s;
+}
+
+.faq-accordion.active + .faq-text {
+  display: block;
+  max-height: 1000px; /* Set a suitable max-height value */
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .faq-box {
+    width: 100%;
+  }
+}
+
+.question {
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.question:hover {
+  color: #007bff; /* Change to your desired hover color */
+}

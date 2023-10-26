@@ -1,0 +1,87 @@
+.services {
+  padding: 20px 0;
+  background-color: #f8f8f8;
+}
+
+.services .container {
+  text-align: center;
+}
+
+.services .grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 30px;
+}
+
+.services .box {
+  background-color: #6ca7df;
+  border: 5px solid #ffffff;
+  padding: 30px;
+  border-radius: 3px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.services .box:hover {
+  transform: translateY(-40px);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  background-color: #478ac9;
+}
+
+.services .box h1 {
+  font-size: 35px;
+  margin: 8px 0;
+}
+
+.services .box img {
+  max-width: 10%;
+  height: auto;
+  transition: opacity 0.2s ease;
+}
+
+/* .services .box .show {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+} */
+
+/* .services .box:hover img {
+  opacity:50%;
+} */
+
+/* Icon Styling */
+.services .box .icon-read {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #478ac9;
+  margin-top: 15px;
+}
+
+.services .box .icon-read i {
+  margin: 0 5px;
+}
+
+/* Heading Styling */
+.services .heading {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.services .subheading {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .services .grid3 {
+    grid-template-columns: 1fr;
+  }
+}

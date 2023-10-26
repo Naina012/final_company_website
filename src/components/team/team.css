@@ -1,0 +1,94 @@
+/* team.css */
+
+/* Container for the entire team section */
+.team-section {
+  background-color: #60b4ed;
+  padding: 50px 0;
+}
+
+/* Center the content in the container */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+/* Team member card styling */
+.team-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Team member image styling */
+.team-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.team-image img {
+  max-width: 40%;
+  height: 5%;
+  transition: transform 0.3s ease;
+}
+
+/* Social media icons styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icon {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Show the overlay on hover */
+.team-image:hover .overlay {
+  opacity: 1;
+}
+
+/* Zoom in the image on hover */
+.team-image:hover img {
+  transform: scale(1.1);
+}
+
+/* Team member details */
+.team-details {
+  padding: 20px 0;
+}
+
+.team-name {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.team-role {
+  font-size: 16px;
+  margin: 0;
+}

@@ -1,0 +1,194 @@
+/* footer.css */
+
+/* Newsletter Section */
+.newletter {
+  background-color: #478ac9;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* .newletter .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.newletter h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.newletter span {
+  font-size: 19px;
+}
+.newletter span:hover {
+  transform: scale(1.1);
+  color: #43474a;
+
+}
+.newletter h1:hover {
+  transform: scale(1.2);
+  color: #43474a;
+
+}
+
+
+.newsletter {
+  display: flex;
+  align-items: center;
+}
+
+/* Update the .newsletter input[type='text'] style */
+.newsletter input[type='text'] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  padding-right: 40px; /* Adjust the padding for the icon */
+}
+
+/* Update the .newsletter i.fa-paper-plane style */
+.newsletter i.fa-paper-plane {
+  font-size: 24px;
+  color: #007bff; /* Change the icon color if needed */
+  cursor: pointer;
+  position: absolute;
+  right: 10px; /* Adjust the right position as needed */
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+}
+
+footer {
+  background-color: #444;
+  color: #fff;
+  padding: 40px 0;
+}
+
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .box {
+  flex: 1;
+  margin: 0 10px;
+}
+
+footer h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+footer h1:hover {
+  color: #478ac9;
+}
+
+footer span {
+  font-size: 14px;
+}
+
+
+footer p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+footer a:hover {
+  color: #478ac9;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Legal Section */
+.legal {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Social Media Icons */
+.logo a {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.link ul {
+  list-style: none;
+  padding: 0;
+}
+
+.link ul li {
+  margin-bottom: 10px;
+}
+
+.fa.fa-paper-plane:hover {
+  color:  #478ac9;
+  
+}
+
+.twitter,
+.facebook,
+.instagram,
+.linkedin {
+  display: inline-block;
+  margin: 10px;
+  transition: transform 0.2s; /* Add a transition for smooth movement */
+}
+
+/* Define the hover effect */
+.twitter:hover {
+  transform: translateY(-5px); /* Move the icon 5 pixels up on hover */
+}
+
+.facebook:hover {
+  transform: translateY(-5px); /* Move the icon 5 pixels up on hover */
+}
+
+.instagram:hover {
+  transform: translateY(-5px); /* Move the icon 5 pixels up on hover */
+}
+
+.linkedin:hover {
+  transform: translateY(-5px); /* Move the icon 5 pixels up on hover */
+}
+
+
+.fas.fa-caret-right {
+  color:#478ac9;
+}
+.bi .bi-arrow-up-short{
+  color: #47c94d;
+}
+
+/* .box .last{
+  padding-left: -90px;
+} */
+.back-to-top {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 15px; /* Adjust the distance from the right as needed */
+  z-index: 900;
+  color: #0936ec; /* Button text color */
+  border: none;
+  border-radius: 50%; /* Use 50% for a circular button */
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background: transparent; /* Remove the background color */
+}
+
+.back-to-top:hover {
+  color: #007bff; /* Button text color on hover */
+}

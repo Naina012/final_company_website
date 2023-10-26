@@ -1,0 +1,66 @@
+/* Testimonial.css */
+
+/* Container for the whole testimonial section */
+.testimonial-container {
+  background-color: #46b8de;
+  padding: 60px 0;
+}
+
+/* Container for the carousel */
+.testimonial-carousel {
+  max-width: 1700px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+}
+
+/* Style for each individual testimonial box */
+.testimonial-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 20px;
+  margin-right: 10px;
+  display: inline-block;
+  width: calc(33.3333% - 10px); /* To fit 3 items in a row with some spacing */
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+/* Style for testimonial box on hover */
+.testimonial-item:hover {
+  transform: scale(1.05);
+  color: rgb(255, 255, 255);
+  background-color: cornflowerblue; /* Enlarge the box on hover */
+}
+
+/* Style for the testimonial image */
+.testimonial-image {
+  max-width: 100px; /* Adjust the max-width as needed */
+  border-radius: 30%;
+  margin-bottom: 10px;
+}
+
+/* Style for the testimonial name and post */
+.testimonial-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.testimonial-post {
+  font-size: 18px;
+  color: #4b88d3;
+}
+
+/* Style for the testimonial description */
+.testimonial-description {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .testimonial-item {
+    width: 100%; /* On smaller screens, show one item at a time */
+  }
+}
